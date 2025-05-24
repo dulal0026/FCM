@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51B7D8BBEE591882BA4EE2F2 /* Pods_FCM_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E37053EAF6DF68346F563B /* Pods_FCM_sample.framework */; };
 		B4B3E7FD2DC21E500043BDEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B3E7FC2DC21E500043BDEE /* AppDelegate.swift */; };
 		B4B3E7FF2DC21E500043BDEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B3E7FE2DC21E500043BDEE /* SceneDelegate.swift */; };
 		B4B3E8012DC21E500043BDEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B3E8002DC21E500043BDEE /* ViewController.swift */; };
 		B4B3E8042DC21E500043BDEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4B3E8022DC21E500043BDEE /* Main.storyboard */; };
 		B4B3E8062DC21E510043BDEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4B3E8052DC21E510043BDEE /* Assets.xcassets */; };
 		B4B3E8092DC21E510043BDEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4B3E8072DC21E510043BDEE /* LaunchScreen.storyboard */; };
+		B4B3E81C2DC231DA0043BDEE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4B3E81B2DC231DA0043BDEE /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00E37053EAF6DF68346F563B /* Pods_FCM_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FCM_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F34B892D7C7D66C319213B1 /* Pods-FCM sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCM sample.release.xcconfig"; path = "Target Support Files/Pods-FCM sample/Pods-FCM sample.release.xcconfig"; sourceTree = "<group>"; };
+		B0A5606329BB39662B8BF8B4 /* Pods-FCM sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCM sample.debug.xcconfig"; path = "Target Support Files/Pods-FCM sample/Pods-FCM sample.debug.xcconfig"; sourceTree = "<group>"; };
 		B4B3E7F92DC21E500043BDEE /* FCM sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FCM sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B3E7FC2DC21E500043BDEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4B3E7FE2DC21E500043BDEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,8 @@
 		B4B3E8052DC21E510043BDEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4B3E8082DC21E510043BDEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4B3E80A2DC21E510043BDEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4B3E81B2DC231DA0043BDEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B4B3E81D2DC249B50043BDEE /* FCM sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FCM sample.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +38,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51B7D8BBEE591882BA4EE2F2 /* Pods_FCM_sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C921A0FAB2DFA82B84D9A94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0A5606329BB39662B8BF8B4 /* Pods-FCM sample.debug.xcconfig */,
+				9F34B892D7C7D66C319213B1 /* Pods-FCM sample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC41ED3FB0BBD838CBB9CCD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00E37053EAF6DF68346F563B /* Pods_FCM_sample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B4B3E7F02DC21E4F0043BDEE = {
 			isa = PBXGroup;
 			children = (
 				B4B3E7FB2DC21E500043BDEE /* FCM sample */,
 				B4B3E7FA2DC21E500043BDEE /* Products */,
+				3C921A0FAB2DFA82B84D9A94 /* Pods */,
+				AC41ED3FB0BBD838CBB9CCD0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +83,8 @@
 		B4B3E7FB2DC21E500043BDEE /* FCM sample */ = {
 			isa = PBXGroup;
 			children = (
+				B4B3E81D2DC249B50043BDEE /* FCM sample.entitlements */,
+				B4B3E81B2DC231DA0043BDEE /* GoogleService-Info.plist */,
 				B4B3E7FC2DC21E500043BDEE /* AppDelegate.swift */,
 				B4B3E7FE2DC21E500043BDEE /* SceneDelegate.swift */,
 				B4B3E8002DC21E500043BDEE /* ViewController.swift */,
@@ -74,6 +103,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4B3E80D2DC21E510043BDEE /* Build configuration list for PBXNativeTarget "FCM sample" */;
 			buildPhases = (
+				5EDC9116C4391EF531CA6D7A /* [CP] Check Pods Manifest.lock */,
 				B4B3E7F52DC21E500043BDEE /* Sources */,
 				B4B3E7F62DC21E500043BDEE /* Frameworks */,
 				B4B3E7F72DC21E500043BDEE /* Resources */,
@@ -111,6 +141,9 @@
 				Base,
 			);
 			mainGroup = B4B3E7F02DC21E4F0043BDEE;
+			packageReferences = (
+				B45762462DC816C300CCC94E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B4B3E7FA2DC21E500043BDEE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,12 +159,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4B3E8092DC21E510043BDEE /* LaunchScreen.storyboard in Resources */,
+				B4B3E81C2DC231DA0043BDEE /* GoogleService-Info.plist in Resources */,
 				B4B3E8062DC21E510043BDEE /* Assets.xcassets in Resources */,
 				B4B3E8042DC21E500043BDEE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EDC9116C4391EF531CA6D7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FCM sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B4B3E7F52DC21E500043BDEE /* Sources */ = {
@@ -287,12 +346,16 @@
 		};
 		B4B3E80E2DC21E510043BDEE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0A5606329BB39662B8BF8B4 /* Pods-FCM sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "FCM sample/FCM sample.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z9ZX33M6A4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "FCM sample/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -305,8 +368,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bablive.FCM-sample";
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bablive.temp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,12 +380,16 @@
 		};
 		B4B3E80F2DC21E510043BDEE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F34B892D7C7D66C319213B1 /* Pods-FCM sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "FCM sample/FCM sample.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z9ZX33M6A4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "FCM sample/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -333,8 +402,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bablive.FCM-sample";
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bablive.temp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -363,6 +434,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B45762462DC816C300CCC94E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 10.25.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = B4B3E7F12DC21E4F0043BDEE /* Project object */;
 }
